@@ -1,10 +1,11 @@
 const { ethers } = require("hardhat")
+const { BASE_URI, WHITELIST_CONTRACT_ADDRESS } = require("../helper-config")
 
 async function main() {
     const cryptoDevFactory = await ethers.getContractFactory("CryptoDevs")
     const CryptoDev = await cryptoDevFactory.deploy(
-        "abc",
-        "0xcEbEF944e2fbe18de222A22157E86AeB21507940"
+        BASE_URI,
+        WHITELIST_CONTRACT_ADDRESS
     )
     await CryptoDev.deployed()
     console.log(`Contract Deployed at : ${CryptoDev.address}`)
