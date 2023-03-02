@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+# CryptoDevs NFT Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Crypto Devs NFT Collectios smartcontract that comes with Presale Minting functionality for Whitelisted user.
+This project make use of the already existing contract called `Whitelist.sol` to get the Whitelisted addresses.
 
-Try running some of the following tasks:
+Try running some of the following command:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
 npx hardhat run scripts/deploy.js
 ```

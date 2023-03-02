@@ -3,6 +3,6 @@ pragma solidity ^0.8.10;
 
 interface IWhitelist {
     function whitelistedAddresses(
-        address address_
+        address _address
     ) external view returns (bool);
 }
