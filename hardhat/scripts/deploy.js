@@ -1,6 +1,8 @@
 const { ethers } = require("hardhat")
 const { BASE_URI, WHITELIST_CONTRACT_ADDRESS } = require("../helper-config")
 
+// contract address (goerli testnet) : 0x217f3aEAe122aC1bC7Ea63482e4d3FA52bb3Eb10
+
 async function main() {
     const cryptoDevFactory = await ethers.getContractFactory("CryptoDevs")
     const CryptoDev = await cryptoDevFactory.deploy(
